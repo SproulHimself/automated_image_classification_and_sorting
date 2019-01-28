@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+
+# ignore data folder
+mod5_data/
