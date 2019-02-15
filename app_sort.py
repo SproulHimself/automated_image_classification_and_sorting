@@ -116,25 +116,52 @@ def sort_blurry(dir_path):
         else:
             shutil.move(file_path, not_blurry_dir)
     print()
-    print('🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓')
-    print('Your photographs have been sorted!')
-    print('🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓')
-    system('say -v Oliver Your photographs have been processed')
+    print('🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓')
+    print('The potentially "blurry" photographs have been sorted!')
+    print('🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓')
     print()
 
+    system('say -v Oliver Your photographs have been processed')
+
+
+
+
+# THIS FUNCTION IS NOT READY. NEEDS TO BE INTEGRATED ASAP.
+
+# Define a function to sort blinks from not blinks
+
+# def sort_blinks(dir_path):
+#
+#     for file in os.listdir(dir_path):
+#
+#         file_path = dir_path + '/' + str(file)
+#
+#         leftEye, rightEye = cropEyes(file)
+#         leftEye_pred = model.predict(leftEye)
+#         rightEye_pred = model.predict(rightEye)
+#
+#         if leftEye_pred < .5 or rightEye_pred < .5:
+#             shutil.move(file_path, blink_dir)
+#         else:
+#             shutil.move(file_path, not_blink_dir)
+
+
+
+
+# The following function is to reset the folders during project presentation
 
 def reset_presentation():
 
     for file in os.listdir(blurry_dir):
         file_path = blurry_dir +  '/' + str(file)
-        file_name = str(file[-3:])
-        if file_name == 'jpg':
+        file_ext = str(file[-3:])
+        if file_ext == 'jpg':
             shutil.move(file_path, default_dir_path)
 
     for file in os.listdir(not_blurry_dir):
         file_path = not_blurry_dir +  '/' + str(file)
-        file_name = str(file[-3:])
-        if file_name == 'jpg':
+        file_ext = str(file[-3:])
+        if file_ext == 'jpg':
             shutil.move(file_path, default_dir_path)
 
 

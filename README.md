@@ -4,4 +4,9 @@ I am not a photographer, nor am I passionate about photography. But my current r
 
 
 
-[README is under construction]
+### [This README is under construction.]
+
+
+* I am in the process of converting my presentation for this project from slideshow into a proper README format.
+
+* Thanks for your patience!
