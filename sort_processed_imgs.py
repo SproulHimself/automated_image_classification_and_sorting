@@ -89,8 +89,8 @@ def predict_image_cnn(path):
 # dir_path = 'THIS IS THE FOLDER WE WANT TO SORT WITH FUNCTION BELOW'
 
 
-# This is my personal folder for now. Will update with proper format ASAP. 
-default_dir_path = '/Users/sproul/Downloads/mod5_imgs/slide_imgs/'
+# This is my personal folder for now. Will update with proper format ASAP.
+default_dir_path = 'images/'
 
 
 
@@ -102,15 +102,13 @@ def sort_blurry(dir_path):
     for file in os.listdir(dir_path):
 
         file_path = dir_path + str(file)
-        # formatted_file = preprocess(file)
+        file_ext = str(file[-3:])
 
-        file_name = str(file[-3:])
-        if file_name == 'jpg':
+        if file_ext == 'jpg':
             blurry_pred = predict_image_cnn(file_path)
 
         if blurry_pred > 0.5:
             shutil.move(file_path, blurry_dir)
-
         else:
             shutil.move(file_path, not_blurry_dir)
     print()
@@ -119,6 +117,8 @@ def sort_blurry(dir_path):
     print('🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓 📷 🤓')
     system('say -v Oliver Your photographs have been processed')
     print()
+
+
 
 
 def reset_presentation():
@@ -134,6 +134,9 @@ def reset_presentation():
         file_name = str(file[-3:])
         if file_name == 'jpg':
             shutil.move(file_path, default_dir_path)
+
+    print('The photos have been moved back into original the folder')
+
 
 
 
