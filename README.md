@@ -43,22 +43,35 @@ I curated my own custom datasets through combining several other datasets as wel
 
 #### Preprocessing
 
-The preprocessing steps for the blurry model were far less intense than the blinking model.
+After first attempting the project a go using a Jupyter Notebook, I soon realized that I needed some more processing power. Thus, this was my first exploration using a Google Colab Notebook. The preprocessing steps for the blurry model were far less intense than the blinking model.
 
-For the blurry model,
+For the blurry model, I resized the images to 224 x 224 pixels and rescaled them by 1.0/255.
 
-For the blinking model, 
+The blinking model was much more of an iterative process.
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+---
+
+### Architectures
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 
 ---
 
-### Models
+### Results
 
-
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 ---
 
+### Summary
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+---
 ### Next steps
 
-* Identify duplicate/similar photos
-* Further develop the application
+* Identify duplicate/similar photos by using a pixel similarity comparison in OpenCV, a clustering algorithm, or a combination of the two.
+* Further develop the application into standalone functional software.
