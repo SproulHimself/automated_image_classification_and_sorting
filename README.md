@@ -34,7 +34,7 @@ I am not a photographer, nor am I passionate about photography. But my current r
 
 * Identify photos that are blurry and not blurry
 * Identify photos that do and don't contain people blinking
-* Identify photos that are duplicate/similar  
+* Identify photos that are duplicate/similar (*Spoiler alert: ran out of time before I could complete this step)  
 * Build a platform that automatically sorts photos for photographers to save time during the culling process
 
 ----
@@ -53,11 +53,12 @@ After first attempting the project a go using a Jupyter Notebook, I soon realize
 
 For the blurry model, I resized the images to 224 x 224 pixels and rescaled them by 1.0/255.
 
-<!-- Building the blinking model was much more of an iterative, trial and error process.  -->
+<!-- Building the blinking model was much more of an iterative, trial and error process.
+I chose 96 x 96 because many of the photos I was training/testing on were 24 x 24 and I wanted to preserve as much of the image quailty as possible -->
 
-For the blurry model, I resized the images to 96 x 96 pixels and rescaled them by 1.0/255.
+For the blurry model, I resized the images to 96 x 96 pixels and rescaled them by 1.0/255. This was done because I would be locating the faces in pictures and testing just the eyes.
 
-<!-- I chose 96 x 96 because many of the photos I was training/testing on were 24 x 24 and I wanted to preserve as much of the image quailty as possible -->
+
 
 
 
@@ -75,13 +76,23 @@ The final blinking model contained three convolutional layers, a dropout layer, 
 
 ### Results
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<!-- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." -->
+
+At this time, the testing accuracy scores for the "blurry" models are 91.5% and 87.8% respectively.
+
+I will be fine tuning these models in the upcoming weeks.
+
+
+
+
 
 ---
 
 ### Summary
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<!-- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." -->
+
+At the beginning of this project I wanted to set ambitious goals to challenge myself. I ran put of time and I was not able to work out a model that identifies duplicate/similar photos. I will
 
 ---
 ### Next steps
