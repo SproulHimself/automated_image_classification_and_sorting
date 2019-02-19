@@ -92,7 +92,7 @@ I will be fine tuning these models in the upcoming weeks.
 
 <!-- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." -->
 
-At the beginning of this project I wanted to set ambitious goals to challenge myself. I ran put of time and I was not able to work out a model that identifies duplicate/similar photos. I will
+At the beginning of this project I wanted to set ambitious goals to challenge myself. I ran put of time and I was not able to work out a model that identifies duplicate/similar photos. I will be working on this in the near future. Even though I didn't complete all my goals, I learned a great deal from this project. 
 
 ---
 ### Next steps
