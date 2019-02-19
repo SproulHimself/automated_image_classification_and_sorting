@@ -28,7 +28,11 @@ I am not a photographer, nor am I passionate about photography. But my current r
 * Identify photos that are duplicate/similar (*Spoiler alert: ran out of time before I could complete this step)  
 * Build a platform that automatically sorts photos for photographers to save time during the culling process
 
-----
+
+
+
+
+--------------
 ### Datasets
 
 I curated my own custom datasets through combining several other datasets as well as scraping and cropping images.
@@ -63,6 +67,10 @@ The final blurry model contained two convolutional layers and two dense layers.
 
 The final blinking model contained three convolutional layers, a dropout layer, and two dense layers.
 
+
+
+
+
 ---
 
 ### Results
@@ -86,6 +94,18 @@ I will be fine tuning these models in the upcoming weeks.
 At the beginning of this project I wanted to set ambitious goals to challenge myself. I ran put of time and I was not able to work out a model that identifies duplicate/similar photos. I will be working on this in the near future. Even though I didn't complete all my goals, I learned a great deal from this project.
 
 I was able to build a basic application which sorts a folder of blurry and not blurry photographs into two  newly created folders. I'm very confident with some more time I can build out a fully functional app.
+
+-----
+
+### Demo (beta)
+
+Here is a demo of the beta version of the application:
+
+<!-- https://youtu.be/WJAJePCEY4Q -->
+
+gifs.com/gif/app-demo-ZY4wX5
+
+<iframe src='//gifs.com/embed/app-demo-ZY4wX5' frameborder='0' scrolling='no' width='576px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 ---
 ### Next steps
