@@ -103,9 +103,11 @@ Here is a demo of the beta version of the application:
 
 <!-- https://youtu.be/WJAJePCEY4Q -->
 
-gifs.com/gif/app-demo-ZY4wX5
+![Output sample](https://user-images.githubusercontent.com/34200538/53039289-e1163a80-344c-11e9-8147-7d2a30db84e0.gif)
 
-<iframe src='//gifs.com/embed/app-demo-ZY4wX5' frameborder='0' scrolling='no' width='576px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+
+
+
 
 ---
 ### Next steps
