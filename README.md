@@ -11,13 +11,19 @@
 
 ### Abstract
 
-This is my capstone project for Flatiron School.  I built two image classification models using convolutional neural networks, achieving accuracy scores of 91.5% and 88.5%. The models were combined into an application, currently in beta version.
+This is my capstone project for Flatiron School.  I built two image classification models using convolutional neural networks, achieving accuracy scores of 91.5% and 87.8%. The models were combined into an application, currently in beta version.
 
 ----
 
 ### Motivation
 
+The process of culling is used in every type of photography and is used by professionals and amateurs alike. Culling is simply the process of selecting the best images from a shoot to be edited and delivered to a client.
+
 I am not a photographer, nor am I passionate about photography. But my current roommate is a passionate photographer who runs her own business. When she gets home from shoots, she has between 1000 to 2000 photos which she has to sort though manually. For my latest project I wanted to attempt to use deep learning techniques and python to build something that could save her time during the culling process.
+
+<p align="center">
+<img width="422"  src="https://user-images.githubusercontent.com/34200538/52924975-07c55b80-32fd-11e9-8216-39079ddbdadb.jpg">
+</p>
 
 
 #### Question?
@@ -47,16 +53,23 @@ After first attempting the project a go using a Jupyter Notebook, I soon realize
 
 For the blurry model, I resized the images to 224 x 224 pixels and rescaled them by 1.0/255.
 
-The blinking model was much more of an iterative process.
+<!-- Building the blinking model was much more of an iterative, trial and error process.  -->
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+For the blurry model, I resized the images to 96 x 96 pixels and rescaled them by 1.0/255.
+
+<!-- I chose 96 x 96 because many of the photos I was training/testing on were 24 x 24 and I wanted to preserve as much of the image quailty as possible -->
+
+
 
 ---
 
 ### Architectures
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<!-- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." -->
 
+The final blurry model contained two convolutional layers and two dense layers.
+
+The final blinking model contained three convolutional layers, a dropout layer, and two dense layers.
 
 ---
 
