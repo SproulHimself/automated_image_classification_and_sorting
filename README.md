@@ -103,8 +103,10 @@ Here is a demo of the beta version of the application:
 
 <!-- https://youtu.be/WJAJePCEY4Q -->
 
-![Output sample](https://user-images.githubusercontent.com/34200538/53039289-e1163a80-344c-11e9-8147-7d2a30db84e0.gif)
 
+<p align="center">
+![Output sample](https://user-images.githubusercontent.com/34200538/53039289-e1163a80-344c-11e9-8147-7d2a30db84e0.gif)
+</p>
 
 
 
